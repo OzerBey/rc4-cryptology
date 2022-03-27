@@ -1,4 +1,8 @@
+<center>
+
 ## | RC4 Encryption |
+
+</center>
 
 ![transfer-gif](https://user-images.githubusercontent.com/49093196/160278788-471b4da8-a8ec-4890-85a4-a8f8c9ad95ce.gif)
 
