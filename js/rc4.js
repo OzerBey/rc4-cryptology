@@ -36,10 +36,20 @@ const rc4 = (str, key) => {
   return result;
 };
 
+const encrypt = (str, key = "@rc4-key") => {
+  return str && key ? rc4(str, key) : null; // if data is null return null else return encrypted data
+};
+
+const decrypt = (str, key = "@rc4-key") => {
+  return str && key ? rc4(str, key) : null;
+};
+
 //tests
+/*
 let result = rc4("Hello World", "rc4-key@"); //ascii
 console.log("result of Rc4 algorithm", result);
 let data = "hello world";
 let charCode = data.charCodeAt(0);
 console.log("charCode", charCode); //104
 console.log("fromCharCode", String.fromCharCode(104)); //h
+*/
