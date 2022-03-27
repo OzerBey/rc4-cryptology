@@ -6,7 +6,6 @@ const rc4 = (str, key) => {
     s[i] = i;
     k[i] = key.charCodeAt(i % key.length);
   }
-
   //step 2
   j = 0;
   for (let i = 0; i < 255; i++) {
