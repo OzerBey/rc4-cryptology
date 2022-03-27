@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RC4 Encryption</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <center>
+      <h1>RC4 Şifreleme</h1>
+      key:
+      <input
+        id="key"
+        type="text"
+        name="key"
+        value="@rc4-key"
+        placeholder="Enter a key"
+      />
+      <br /><br />
+      <textarea
+        id="text"
+        style="width: 1000px; height: 200px; font-size: 23px"
+        type="text"
+        name="text"
+        placeholder="Write your text here"
+      ></textarea>
+      <input
+        style="color: white; background-color: red; border-radius: 5px"
+        type="submit"
+        value="Encrypt"
+        onclick="sifrele()"
+      />
+      <br /><br />
+      <fieldset>
+        <table>
+          <tr>
+            <td>
+              <h3>Şifreli Veri:</h3>
+              <textarea
+                style="font-size: 50px"
+                name=""
+                id="resultChipher"
+                cols="46"
+                rows="3"
+              ></textarea>
+            </td>
+            <td>
+              <h3>Orijinal Veri:</h3>
+              <textarea
+                style="font-size: 50px"
+                name=""
+                id="resultPlain"
+                cols="46"
+                rows="3"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+
+        <input
+          style="
+            color: white;
+            background-color: green;
+            border-radius: 0px 23px 23px 0px;
+          "
+          type="button"
+          value="Decrypt"
+          onclick="sifreCoz()"
+        />
+      </fieldset>
+    </center>
+    <script src="index.js"></script>
+  </body>
+</html>
